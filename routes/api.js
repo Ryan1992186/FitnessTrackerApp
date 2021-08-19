@@ -1,7 +1,7 @@
 const db = require('../models');
 
 module.exports = (app) => {
-    app.get('/api/fitness', (req, res) => {
+    app.get('/api/workout', (req, res) => {
         db.fitness.find({})
             .then(fitness => {
                 res.json(fitness);
